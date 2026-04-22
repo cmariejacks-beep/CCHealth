@@ -127,7 +127,7 @@ async function callClaude(system, messages) {
       "anthropic-version": "2023-06-01",
       "anthropic-dangerous-direct-browser-access": "true"
     },
-    body: JSON.stringify({ model:"claude-sonnet-4-20250514", max_tokens:1000, system, messages })
+    body: JSON.stringify({ model:"claude-sonnet-4-5", max_tokens:1000, system, messages })
   });
   const data = await res.json();
   if (data.error) throw new Error(data.error.message);
