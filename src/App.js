@@ -340,7 +340,7 @@ Give me my daily optimization brief.`;
         <div style={{display:"flex",gap:2}}>
           {[["checkin","Check-in"],["brief","Today"],["weekly","Weekly"],["history","Log"]].map(([v,l])=>(
             <button key={v} className="navbtn"
-              style={{color:view===v?C.patch:C.muted,background:view===v?"#0d0007":"none",border:view===v:`1px solid ${C.patch}66`:"1px solid transparent",textShadow:view===v?`0 0 10px ${C.patch}`:"none"}}
+              style={{color:view===v?C.patch:C.muted,background:view===v?"#0d0007":"none",border:view===v?"1px solid #FF2D9B66":"1px solid transparent",textShadow:view===v?"0 0 10px #FF2D9B":"none"}}
               onClick={()=>setView(v)}>{l}</button>
           ))}
         </div>
